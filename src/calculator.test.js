@@ -79,3 +79,10 @@ test("mulitply(0.026, -36.28) = -0.94328", () => {
 test("mulitply(-0.026, -36.28) = 0.94328", () => {
   expect(calculator.multiply(-0.026, -36.28)).toBeCloseTo(0.94328);
 });
+
+test("divide(3, 0) = undefined", () => {
+  expect(calculator.divide(3, 0)).toBeUndefined();
+});
+test("divide(0, 0) = undefined", () => {
+  expect(calculator.divide(0, 0)).toBeUndefined();
+});

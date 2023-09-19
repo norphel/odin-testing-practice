@@ -7,6 +7,8 @@ function getShiftedCharacter(char, shiftFactor) {
     return String.fromCharCode(
       ((char.charCodeAt() - 65 + shiftFactor) % 26) + 65
     );
+  } else {
+    return char;
   }
 }
 

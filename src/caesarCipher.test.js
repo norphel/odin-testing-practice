@@ -21,3 +21,11 @@ test("'ABCDEFGHIJKLMNOPQRSTUVWXYZ' shifted by 3 should be 'DEFGHIJKLMNOPQRSTUVWX
 test("'TheOdinProject' shifted by 2 should be 'VjgQfkpRtqlgev'", () => {
   expect(caesarCipher("TheOdinProject", 2)).toBe("VjgQfkpRtqlgev");
 });
+
+test("'Hello!' shifted by 0 should be 'Hello!'", () => {
+  expect(caesarCipher("Hello!", 0)).toBe("Hello!");
+});
+
+test("'How are you?' shifted by 1 should be 'Ipx bsf zpv?'", () => {
+  expect(caesarCipher("How are you?", 1)).toBe("Ipx bsf zpv?");
+});

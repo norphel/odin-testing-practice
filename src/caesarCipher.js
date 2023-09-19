@@ -3,6 +3,10 @@ function getShiftedCharacter(char, shiftFactor) {
     return String.fromCharCode(
       ((char.charCodeAt() - 97 + shiftFactor) % 26) + 97
     );
+  } else if (char.charCodeAt() >= 65 && char.charCodeAt() <= 90) {
+    return String.fromCharCode(
+      ((char.charCodeAt() - 65 + shiftFactor) % 26) + 65
+    );
   }
 }
 

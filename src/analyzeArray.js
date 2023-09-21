@@ -1,10 +1,16 @@
 function analyzeArray(arr) {
-  const average =
+  let average =
     arr.reduce((sum, currArrItem) => {
       return sum + currArrItem;
     }, 0) / arr.length;
 
   const length = arr.length;
-  return { average, length };
+  if (length === 0) {
+    average = undefined;
+  }
+  return {
+    average,
+    length,
+  };
 }
 module.exports = analyzeArray;

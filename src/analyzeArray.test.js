@@ -16,6 +16,10 @@ test("length of [] = 0", () => {
   expect(analyzeArray([]).length).toBe(0);
 });
 
+test("average of [] = 0", () => {
+  expect(analyzeArray([]).average).toBeUndefined();
+});
+
 test("average of [1, 2, 3] = 2", () => {
   expect(analyzeArray([1, 2, 3]).average).toBe(2);
 });

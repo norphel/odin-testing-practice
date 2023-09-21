@@ -4,6 +4,7 @@ function analyzeArray(arr) {
       return sum + currArrItem;
     }, 0) / arr.length;
 
-  return { average };
+  const length = arr.length;
+  return { average, length };
 }
 module.exports = analyzeArray;
